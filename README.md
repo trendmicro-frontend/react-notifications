@@ -1,38 +1,33 @@
-# react-notification [![build status](https://travis-ci.org/trendmicro-frontend/react-notification.svg?branch=master)](https://travis-ci.org/trendmicro-frontend/react-notification) [![Coverage Status](https://coveralls.io/repos/github/trendmicro-frontend/react-notification/badge.svg?branch=master)](https://coveralls.io/github/trendmicro-frontend/react-notification?branch=master)
+# react-notifications [![build status](https://travis-ci.org/trendmicro-frontend/react-notifications.svg?branch=master)](https://travis-ci.org/trendmicro-frontend/react-notifications) [![Coverage Status](https://coveralls.io/repos/github/trendmicro-frontend/react-notifications/badge.svg?branch=master)](https://coveralls.io/github/trendmicro-frontend/react-notifications?branch=master)
 
-[![NPM](https://nodei.co/npm/@trendmicro/react-notification.png?downloads=true&stars=true)](https://nodei.co/npm/@trendmicro/react-notification/)
+[![NPM](https://nodei.co/npm/@trendmicro/react-notifications.png?downloads=true&stars=true)](https://nodei.co/npm/@trendmicro/react-notifications/)
 
-React Notification
+React Notifications
 
-Demo: https://trendmicro-frontend.github.io/react-notification
+Demo: https://trendmicro-frontend.github.io/react-notifications
 
 ## Installation
 
-1. Install the latest version of [react](https://github.com/facebook/react) and [react-notification](https://github.com/trendmicro-frontend/react-notification):
+1. Install the latest version of [react](https://github.com/facebook/react) and [react-notifications](https://github.com/trendmicro-frontend/react-notifications):
 
   ```
-  npm install --save react @trendmicro/react-notification
+  npm install --save react @trendmicro/react-notifications
   ```
 
-2. At this point you can import `@trendmicro/react-notification` and its styles in your application as follows:
+2. At this point you can import `@trendmicro/react-notifications` and its styles in your application as follows:
 
   ```js
-  import Notification from '@trendmicro/react-notification';
+  import { Notification, ToastNotification } from '@trendmicro/react-notifications';
 
   // Be sure to include styles at some point, probably during your bootstraping
-  import '@trendmicro/react-notification/dist/react-notification.css';
+  import '@trendmicro/react-notifications/dist/react-notifications.css';
   ```
 
 ## Usage
 
-```js
-<Component
-    className="component"
->
-    GitHub
-</Component>
-```
+### Notification
 
+### Toast Notification
 
 ## API
 
