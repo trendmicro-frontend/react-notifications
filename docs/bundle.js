@@ -1575,19 +1575,31 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".notification---2_Af9 {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  color: #222;\n  padding: 8px 16px 8px 24px;\n  border-radius: 0;\n}\n.notification---2_Af9 *,\n.notification---2_Af9 *:before,\n.notification---2_Af9 *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n.notification---2_Af9 + .notification---2_Af9 {\n  margin-top: 1px;\n}\n.notification---2_Af9.notification-success---1FwUX {\n  background-color: #dbf5e7;\n  border: 1px solid #c4ebd6;\n}\n.notification---2_Af9.notification-danger---33-J0 {\n  background-color: #f8dcdd;\n  border: 1px solid #f3c0c3;\n}\n.notification---2_Af9.notification-warning---2R9Dl {\n  background-color: #fdf0c3;\n  border: 1px solid #fcd963;\n}\n.notification---2_Af9.notification-info---Yww8c {\n  background-color: #cceaf5;\n  border: 1px solid #99d5eb;\n}\n", ""]);
+exports.push([module.i, ".notification---2_Af9 {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  position: relative;\n  color: #222;\n  padding: 8px 40px 8px 48px;\n  border-radius: 0;\n}\n.notification---2_Af9 *,\n.notification---2_Af9 *:before,\n.notification---2_Af9 *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n.notification---2_Af9 + .notification---2_Af9 {\n  margin-top: 1px;\n}\n.notification---2_Af9 .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 24px;\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n}\n.notification---2_Af9 .icon---2iauW.icon-success---3YPmN {\n  background-image: url(" + __webpack_require__("../src/check.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-error---3B7m9 {\n  background-image: url(" + __webpack_require__("../src/close-circle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-warning---2XobG {\n  background-image: url(" + __webpack_require__("../src/exclamation-triangle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-info---BIo6m {\n  background-image: url(" + __webpack_require__("../src/info-circle.svg") + ");\n}\n.notification---2_Af9.success---eHf2W.dismissed---3wrTq,\n.notification---2_Af9.error---2ZN1m.dismissed---3wrTq,\n.notification---2_Af9.warning---sKkZA.dismissed---3wrTq,\n.notification---2_Af9.info---2db-A.dismissed---3wrTq {\n  border: 0;\n  margin: 0;\n}\n.notification---2_Af9.success---eHf2W {\n  background-color: #dbf5e7;\n  border: 1px solid #c4ebd6;\n}\n.notification---2_Af9.error---2ZN1m {\n  background-color: #f8dcdd;\n  border: 1px solid #f3c0c3;\n}\n.notification---2_Af9.warning---sKkZA {\n  background-color: #fdf0c3;\n  border: 1px solid #fcd963;\n}\n.notification---2_Af9.info---2db-A {\n  background-color: #cceaf5;\n  border: 1px solid #99d5eb;\n}\n.notification---2_Af9.fade---Xss4y {\n  opacity: 0;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\";\n  filter: alpha(opacity=0);\n  padding-top: 0;\n  padding-bottom: 0;\n  border-width: 0;\n  -webkit-transition: all 0.15s linear;\n  -moz-transition: all 0.15s linear;\n  -o-transition: all 0.15s linear;\n  -ms-transition: all 0.15s linear;\n  transition: all 0.15s linear;\n}\n.notification---2_Af9.fade---Xss4y.in---3rbq2 {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  padding-top: 8px;\n  padding-bottom: 8px;\n  border-width: 1px;\n}\n.notification---2_Af9 .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 16px;\n  margin: 0;\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  background-image: url(" + __webpack_require__("../src/close.svg") + ");\n}\n.notification---2_Af9 .btn-dismiss---3WCDd:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n.notification---2_Af9.toast-notification---3n6Fc {\n  padding: 8px 36px 8px 40px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 16px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 12px;\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"notification": "notification---2_Af9",
-	"notification-success": "notification-success---1FwUX",
-	"notificationSuccess": "notification-success---1FwUX",
-	"notification-danger": "notification-danger---33-J0",
-	"notificationDanger": "notification-danger---33-J0",
-	"notification-warning": "notification-warning---2R9Dl",
-	"notificationWarning": "notification-warning---2R9Dl",
-	"notification-info": "notification-info---Yww8c",
-	"notificationInfo": "notification-info---Yww8c"
+	"icon": "icon---2iauW",
+	"icon-success": "icon-success---3YPmN",
+	"iconSuccess": "icon-success---3YPmN",
+	"icon-error": "icon-error---3B7m9",
+	"iconError": "icon-error---3B7m9",
+	"icon-warning": "icon-warning---2XobG",
+	"iconWarning": "icon-warning---2XobG",
+	"icon-info": "icon-info---BIo6m",
+	"iconInfo": "icon-info---BIo6m",
+	"success": "success---eHf2W",
+	"dismissed": "dismissed---3wrTq",
+	"error": "error---2ZN1m",
+	"warning": "warning---sKkZA",
+	"info": "info---2db-A",
+	"fade": "fade---Xss4y",
+	"in": "in---3rbq2",
+	"btn-dismiss": "btn-dismiss---3WCDd",
+	"btnDismiss": "btn-dismiss---3WCDd",
+	"toast-notification": "toast-notification---3n6Fc",
+	"toastNotification": "toast-notification---3n6Fc"
 };
 
 /***/ }),
@@ -24085,6 +24097,10 @@ var _react = __webpack_require__("../node_modules/react/react.js");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactAnchor = __webpack_require__("../node_modules/@trendmicro/react-anchor/lib/index.js");
+
+var _reactAnchor2 = _interopRequireDefault(_reactAnchor);
+
 var _index = __webpack_require__("../src/index.styl");
 
 var _index2 = _interopRequireDefault(_index);
@@ -24113,28 +24129,153 @@ var Notification = (_temp = _class = function (_PureComponent) {
     _createClass(Notification, [{
         key: 'render',
         value: function render() {
-            var _classNames;
+            var _classNames, _classNames2;
 
             var _props = this.props,
+                show = _props.show,
                 type = _props.type,
+                onDismiss = _props.onDismiss,
                 className = _props.className,
-                props = _objectWithoutProperties(_props, ['type', 'className']);
+                children = _props.children,
+                props = _objectWithoutProperties(_props, ['show', 'type', 'onDismiss', 'className', 'children']);
 
-            return _react2.default.createElement('div', _extends({}, props, {
-                className: (0, _classnames2.default)(className, _index2.default.notification, (_classNames = {}, _defineProperty(_classNames, _index2.default.notificationDanger, type === 'danger'), _defineProperty(_classNames, _index2.default.notificationWarning, type === 'warning'), _defineProperty(_classNames, _index2.default.notificationInfo, type === 'info'), _defineProperty(_classNames, _index2.default.notificationSuccess, type === 'success'), _classNames))
-            }));
+            var icon = _react2.default.createElement('i', {
+                className: (0, _classnames2.default)(_index2.default.icon, (_classNames = {}, _defineProperty(_classNames, _index2.default.iconError, type === 'error'), _defineProperty(_classNames, _index2.default.iconWarning, type === 'warning'), _defineProperty(_classNames, _index2.default.iconInfo, type === 'info'), _defineProperty(_classNames, _index2.default.iconSuccess, type === 'success'), _classNames))
+            });
+            var dismiss = _react2.default.createElement(_reactAnchor2.default, {
+                onClick: onDismiss,
+                className: _index2.default.btnDismiss
+            });
+
+            return _react2.default.createElement(
+                'div',
+                _extends({}, props, {
+                    className: (0, _classnames2.default)(className, _index2.default.notification, (_classNames2 = {}, _defineProperty(_classNames2, _index2.default.fade, true), _defineProperty(_classNames2, _index2.default.in, show), _defineProperty(_classNames2, _index2.default.dismissed, !show), _defineProperty(_classNames2, _index2.default.error, type === 'error'), _defineProperty(_classNames2, _index2.default.warning, type === 'warning'), _defineProperty(_classNames2, _index2.default.info, type === 'info'), _defineProperty(_classNames2, _index2.default.success, type === 'success'), _classNames2))
+                }),
+                show && icon,
+                show && dismiss,
+                show && children
+            );
         }
     }]);
 
     return Notification;
 }(_react.PureComponent), _class.propTypes = {
-    type: _propTypes2.default.oneOf(['', 'danger', 'success', 'warning', 'info']),
+    show: _propTypes2.default.bool,
+    type: _propTypes2.default.oneOf(['', 'error', 'success', 'warning', 'info']),
     onDismiss: _propTypes2.default.func
 }, _class.defaultProps = {
+    show: true,
     type: '',
-    onDismiss: function onDismiss() {}
+    onDismiss: function onDismiss(event) {}
 }, _temp);
 exports.default = Notification;
+
+/***/ }),
+
+/***/ "../src/ToastNotification.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _class, _temp;
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _propTypes = __webpack_require__("../node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _react = __webpack_require__("../node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Notification = __webpack_require__("../src/Notification.jsx");
+
+var _Notification2 = _interopRequireDefault(_Notification);
+
+var _index = __webpack_require__("../src/index.styl");
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ToastNotification = (_temp = _class = function (_PureComponent) {
+    _inherits(ToastNotification, _PureComponent);
+
+    function ToastNotification() {
+        _classCallCheck(this, ToastNotification);
+
+        return _possibleConstructorReturn(this, (ToastNotification.__proto__ || Object.getPrototypeOf(ToastNotification)).apply(this, arguments));
+    }
+
+    _createClass(ToastNotification, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                className = _props.className,
+                props = _objectWithoutProperties(_props, ['className']);
+
+            return _react2.default.createElement(_Notification2.default, _extends({}, props, {
+                className: (0, _classnames2.default)(className, _index2.default.toastNotification)
+            }));
+        }
+    }]);
+
+    return ToastNotification;
+}(_react.PureComponent), _class.propTypes = _extends({}, _Notification2.default.propTypes, {
+    dismissTimeout: _propTypes2.default.number
+}), _class.defaultProps = _extends({}, _Notification2.default.defaultProps, {
+    dismissTimeout: 0
+}), _temp);
+exports.default = ToastNotification;
+
+/***/ }),
+
+/***/ "../src/check.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "35374aa366c94c469aeb6f97350d3918.svg";
+
+/***/ }),
+
+/***/ "../src/close-circle.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4043a79ac7dede7ba3fbad5c794fd0fc.svg";
+
+/***/ }),
+
+/***/ "../src/close.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b32ada73892e83e459d00e11d7329224.svg";
+
+/***/ }),
+
+/***/ "../src/exclamation-triangle.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "14f570f758c20f33b2650217e94174c8.svg";
 
 /***/ }),
 
@@ -24144,13 +24285,23 @@ exports.default = Notification;
 "use strict";
 
 
-var _Notification = __webpack_require__("../src/Notification.jsx");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ToastNotification = exports.Notification = undefined;
 
-var _Notification2 = _interopRequireDefault(_Notification);
+var _Notification2 = __webpack_require__("../src/Notification.jsx");
+
+var _Notification3 = _interopRequireDefault(_Notification2);
+
+var _ToastNotification2 = __webpack_require__("../src/ToastNotification.jsx");
+
+var _ToastNotification3 = _interopRequireDefault(_ToastNotification2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = _Notification2.default;
+exports.Notification = _Notification3.default;
+exports.ToastNotification = _ToastNotification3.default;
 
 /***/ }),
 
@@ -24183,6 +24334,13 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+
+/***/ "../src/info-circle.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cdaf5582a8ad3810a8bc0559b808a321.svg";
 
 /***/ }),
 
@@ -24465,9 +24623,9 @@ var _Section2 = _interopRequireDefault(_Section);
 
 var _src = __webpack_require__("../src/index.js");
 
-var _src2 = _interopRequireDefault(_src);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -24479,16 +24637,35 @@ var App = function (_React$Component) {
     _inherits(App, _React$Component);
 
     function App() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, App);
 
-        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            error: true,
+            warning: true,
+            info: true,
+            success: true
+        }, _this.onDismiss = function (type) {
+            return function (event) {
+                _this.setState(_defineProperty({}, type, false));
+            };
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(App, [{
         key: 'render',
         value: function render() {
-            var name = 'React Notification';
-            var url = 'https://github.com/trendmicro-frontend/react-notification';
+            var _this2 = this;
+
+            var name = 'React Notifications';
+            var url = 'https://github.com/trendmicro-frontend/react-notifications';
 
             return _react2.default.createElement(
                 'div',
@@ -24496,7 +24673,49 @@ var App = function (_React$Component) {
                 _react2.default.createElement(_Navbar2.default, { name: name, url: url }),
                 _react2.default.createElement(
                     'div',
-                    { className: 'container-fluid', style: { padding: '20px 20px 0' } },
+                    { className: 'container-fluid' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-md-12', style: { margin: '16px 0' } },
+                            _react2.default.createElement(
+                                _reactButtons.Button,
+                                {
+                                    btnStyle: 'flat',
+                                    onClick: function onClick() {
+                                        _this2.setState(function (state) {
+                                            return {
+                                                error: true,
+                                                warning: true,
+                                                info: true,
+                                                success: true
+                                            };
+                                        });
+                                    }
+                                },
+                                'Show Notifications'
+                            ),
+                            _react2.default.createElement(
+                                _reactButtons.Button,
+                                {
+                                    btnStyle: 'flat',
+                                    onClick: function onClick() {
+                                        _this2.setState(function (state) {
+                                            return {
+                                                error: false,
+                                                warning: false,
+                                                info: false,
+                                                success: false
+                                            };
+                                        });
+                                    }
+                                },
+                                'Hide Notifications'
+                            )
+                        )
+                    ),
                     _react2.default.createElement(
                         'div',
                         { className: 'row' },
@@ -24505,36 +24724,116 @@ var App = function (_React$Component) {
                             { className: 'col-md-12' },
                             _react2.default.createElement(
                                 _Section2.default,
-                                { className: 'row-md-6' },
+                                { className: 'row-md-5' },
                                 _react2.default.createElement(
-                                    'h2',
+                                    'h3',
                                     null,
-                                    'Title #1'
+                                    'Notification'
                                 ),
                                 _react2.default.createElement(
-                                    _src2.default,
-                                    { type: 'danger' },
-                                    'Your license will expire in 3 days. ',
+                                    'div',
+                                    null,
                                     _react2.default.createElement(
-                                        _reactButtons.Button,
-                                        { btnSize: 'xs' },
-                                        'Renew Now'
+                                        'b',
+                                        null,
+                                        'Error:'
+                                    ),
+                                    ' ',
+                                    'To notify critical issues that require the user\'s immediate attention and action.'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        'Warning:'
+                                    ),
+                                    ' ',
+                                    'To notify potential issues, but users may not need to do anything.'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        'Info:'
+                                    ),
+                                    ' ',
+                                    'To provide users with potentially useful, relevant informational.'
+                                ),
+                                _react2.default.createElement('div', { style: { marginBottom: 15 } }),
+                                _react2.default.createElement(
+                                    _src.Notification,
+                                    {
+                                        show: this.state.error,
+                                        type: 'error',
+                                        onDismiss: this.onDismiss('error')
+                                    },
+                                    _react2.default.createElement(
+                                        'div',
+                                        null,
+                                        _react2.default.createElement(
+                                            'b',
+                                            null,
+                                            'Unable to Deploy Command'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        null,
+                                        'An internal error has occurred. Try deploying the command later again. If the problem persists, contact your support representative.'
                                     )
                                 ),
                                 _react2.default.createElement(
-                                    _src2.default,
-                                    { type: 'warning' },
-                                    'Your browser is currently not supported. ',
+                                    _src.Notification,
+                                    {
+                                        show: this.state.warning,
+                                        type: 'warning',
+                                        onDismiss: this.onDismiss('warning')
+                                    },
+                                    _react2.default.createElement(
+                                        'div',
+                                        null,
+                                        _react2.default.createElement(
+                                            'b',
+                                            null,
+                                            'Your license will expire soon'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        null,
+                                        _react2.default.createElement(
+                                            'span',
+                                            { style: { marginRight: 8 } },
+                                            'Your license will expire in 3 days.'
+                                        ),
+                                        _react2.default.createElement(
+                                            _reactButtons.Button,
+                                            { btnSize: 'xs', btnStyle: 'flat' },
+                                            'Renew Now'
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    _src.Notification,
+                                    {
+                                        show: this.state.info,
+                                        type: 'info',
+                                        onDismiss: this.onDismiss('info')
+                                    },
+                                    _react2.default.createElement(
+                                        'span',
+                                        { style: { marginRight: 8 } },
+                                        'This is an informational notification.'
+                                    ),
                                     _react2.default.createElement(
                                         _reactAnchor2.default,
                                         null,
                                         'More Information'
                                     )
-                                ),
-                                _react2.default.createElement(
-                                    _src2.default,
-                                    { type: 'info' },
-                                    'This is an informational notification.'
                                 )
                             )
                         )
@@ -24544,37 +24843,99 @@ var App = function (_React$Component) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-md-6' },
+                            { className: 'col-md-12' },
                             _react2.default.createElement(
                                 _Section2.default,
-                                { className: 'row-md-3' },
+                                { className: 'row-md-5' },
                                 _react2.default.createElement(
-                                    'h2',
+                                    'h3',
                                     null,
-                                    'Title #2'
+                                    'Toast Notification'
                                 ),
                                 _react2.default.createElement(
-                                    _src2.default,
+                                    'div',
                                     null,
-                                    'Content #2'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'col-md-6' },
-                            _react2.default.createElement(
-                                _Section2.default,
-                                { className: 'row-md-3' },
-                                _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'Title #3'
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        'Error:'
+                                    ),
+                                    ' ',
+                                    'To indicate incorrect or unsuccessful user actions.'
                                 ),
                                 _react2.default.createElement(
-                                    _src2.default,
+                                    'div',
                                     null,
-                                    'Content #3'
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        'Warning:'
+                                    ),
+                                    ' ',
+                                    'To indicate unusual user actions.'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        'Info:'
+                                    ),
+                                    ' ',
+                                    'To provide additional information on user-initiated actions.'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        'Success:'
+                                    ),
+                                    ' ',
+                                    'To indicate incorrect or unsuccessful user actions.'
+                                ),
+                                _react2.default.createElement('div', { style: { marginBottom: 15 } }),
+                                _react2.default.createElement(
+                                    _src.ToastNotification,
+                                    {
+                                        show: this.state.error,
+                                        type: 'error',
+                                        onDismiss: this.onDismiss('error'),
+                                        style: { width: 320 }
+                                    },
+                                    'Error'
+                                ),
+                                _react2.default.createElement(
+                                    _src.ToastNotification,
+                                    {
+                                        show: this.state.warning,
+                                        type: 'warning',
+                                        onDismiss: this.onDismiss('warning'),
+                                        style: { width: 320 }
+                                    },
+                                    'Warning'
+                                ),
+                                _react2.default.createElement(
+                                    _src.ToastNotification,
+                                    {
+                                        show: this.state.info,
+                                        type: 'info',
+                                        onDismiss: this.onDismiss('info'),
+                                        style: { width: 320 }
+                                    },
+                                    'Info'
+                                ),
+                                _react2.default.createElement(
+                                    _src.ToastNotification,
+                                    {
+                                        show: this.state.success,
+                                        type: 'success',
+                                        onDismiss: this.onDismiss('success'),
+                                        style: { width: 320 }
+                                    },
+                                    'Success'
                                 )
                             )
                         )
@@ -24592,4 +24953,4 @@ _reactDom2.default.render(_react2.default.createElement(App, null), document.get
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?2b7eda40450030431b76
+//# sourceMappingURL=bundle.js.map?bb303ba3887004d87e4b
