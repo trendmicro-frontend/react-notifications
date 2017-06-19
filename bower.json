@@ -1,0 +1,14 @@
+{
+  "name": "@trendmicro/react-notifications",
+  "description": "Trend Micro Components: React Notifications",
+  "authors": [
+    "Cheton Wu <cheton_wu@trend.com.tw>"
+  ],
+  "homepage": "https://github.com/trendmicro-frontend/react-notifications",
+  "snapshots": [],
+  "keywords": [
+    "react",
+    "react-notifications"
+  ],
+  "license": "MIT"
+}
