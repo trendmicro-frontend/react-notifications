@@ -14,16 +14,18 @@ class Notification extends PureComponent {
             'warning',
             'info'
         ]),
+        dismissable: PropTypes.bool,
         onDismiss: PropTypes.func
     };
     static defaultProps = {
         show: true,
         type: '',
+        dismissable: true,
         onDismiss: (event) => {}
     };
 
     render() {
-        const { show, type, onDismiss, className, children, ...props } = this.props;
+        const { show, type, dismissable, onDismiss, className, children, ...props } = this.props;
         const icon = (
             <i
                 className={classNames(
@@ -62,7 +64,7 @@ class Notification extends PureComponent {
                 )}
             >
                 {show && icon}
-                {show && dismiss}
+                {dismissable && show && dismiss}
                 {show && children}
             </div>
         );
