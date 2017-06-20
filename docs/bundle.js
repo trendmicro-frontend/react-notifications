@@ -1575,7 +1575,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".notification---2_Af9 {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  position: relative;\n  color: #222;\n  padding: 8px 40px 8px 48px;\n  border-radius: 0;\n}\n.notification---2_Af9 *,\n.notification---2_Af9 *:before,\n.notification---2_Af9 *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n.notification---2_Af9 + .notification---2_Af9 {\n  margin-top: 1px;\n}\n.notification---2_Af9 .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 24px;\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n}\n.notification---2_Af9 .icon---2iauW.icon-success---3YPmN {\n  background-image: url(" + __webpack_require__("../src/check.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-error---3B7m9 {\n  background-image: url(" + __webpack_require__("../src/close-circle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-warning---2XobG {\n  background-image: url(" + __webpack_require__("../src/exclamation-triangle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-info---BIo6m {\n  background-image: url(" + __webpack_require__("../src/info-circle.svg") + ");\n}\n.notification---2_Af9.success---eHf2W.dismissed---3wrTq,\n.notification---2_Af9.error---2ZN1m.dismissed---3wrTq,\n.notification---2_Af9.warning---sKkZA.dismissed---3wrTq,\n.notification---2_Af9.info---2db-A.dismissed---3wrTq {\n  border: 0;\n  margin: 0;\n}\n.notification---2_Af9.success---eHf2W {\n  background-color: #dbf5e7;\n  border: 1px solid #c4ebd6;\n}\n.notification---2_Af9.error---2ZN1m {\n  background-color: #f8dcdd;\n  border: 1px solid #f3c0c3;\n}\n.notification---2_Af9.warning---sKkZA {\n  background-color: #fdf0c3;\n  border: 1px solid #fcd963;\n}\n.notification---2_Af9.info---2db-A {\n  background-color: #cceaf5;\n  border: 1px solid #99d5eb;\n}\n.notification---2_Af9.fade---Xss4y {\n  opacity: 0;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\";\n  filter: alpha(opacity=0);\n  padding-top: 0;\n  padding-bottom: 0;\n  border-width: 0;\n  -webkit-transition: all 0.15s linear;\n  -moz-transition: all 0.15s linear;\n  -o-transition: all 0.15s linear;\n  -ms-transition: all 0.15s linear;\n  transition: all 0.15s linear;\n}\n.notification---2_Af9.fade---Xss4y.in---3rbq2 {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  padding-top: 8px;\n  padding-bottom: 8px;\n  border-width: 1px;\n}\n.notification---2_Af9 .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 16px;\n  margin: 0;\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  background-image: url(" + __webpack_require__("../src/close.svg") + ");\n}\n.notification---2_Af9 .btn-dismiss---3WCDd:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n.notification---2_Af9.toast-notification---3n6Fc {\n  padding: 8px 36px 8px 40px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 16px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 12px;\n}\n", ""]);
+exports.push([module.i, ".notification---2_Af9 {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  position: relative;\n  color: #222;\n  padding: 8px 40px 8px 48px;\n  border-radius: 0;\n}\n.notification---2_Af9 *,\n.notification---2_Af9 *:before,\n.notification---2_Af9 *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n.notification---2_Af9 + .notification---2_Af9 {\n  margin-top: 1px;\n}\n.notification---2_Af9 .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 24px;\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n}\n.notification---2_Af9 .icon---2iauW.icon-success---3YPmN {\n  background-image: url(" + __webpack_require__("../src/check.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-error---3B7m9 {\n  background-image: url(" + __webpack_require__("../src/close-circle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-warning---2XobG {\n  background-image: url(" + __webpack_require__("../src/exclamation-triangle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-info---BIo6m {\n  background-image: url(" + __webpack_require__("../src/info-circle.svg") + ");\n}\n.notification---2_Af9.success---eHf2W.dismissed---3wrTq,\n.notification---2_Af9.error---2ZN1m.dismissed---3wrTq,\n.notification---2_Af9.warning---sKkZA.dismissed---3wrTq,\n.notification---2_Af9.info---2db-A.dismissed---3wrTq {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n.notification---2_Af9.success---eHf2W {\n  background-color: #dbf5e7;\n  border: 1px solid #c4ebd6;\n}\n.notification---2_Af9.error---2ZN1m {\n  background-color: #f8dcdd;\n  border: 1px solid #f3c0c3;\n}\n.notification---2_Af9.warning---sKkZA {\n  background-color: #fdf0c3;\n  border: 1px solid #fcd963;\n}\n.notification---2_Af9.info---2db-A {\n  background-color: #cceaf5;\n  border: 1px solid #99d5eb;\n}\n.notification---2_Af9.fade---Xss4y {\n  opacity: 0;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\";\n  filter: alpha(opacity=0);\n  padding-top: 0;\n  padding-bottom: 0;\n  border-width: 0;\n  -webkit-transition: all 0.15s linear;\n  -moz-transition: all 0.15s linear;\n  -o-transition: all 0.15s linear;\n  -ms-transition: all 0.15s linear;\n  transition: all 0.15s linear;\n}\n.notification---2_Af9.fade---Xss4y.in---3rbq2 {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  padding-top: 8px;\n  padding-bottom: 8px;\n  border-width: 1px;\n}\n.notification---2_Af9 .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 16px;\n  margin: 0;\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  background-image: url(" + __webpack_require__("../src/close.svg") + ");\n}\n.notification---2_Af9 .btn-dismiss---3WCDd:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n.notification---2_Af9.toast-notification---3n6Fc {\n  padding: 8px 36px 8px 40px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 16px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 12px;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -24134,10 +24134,11 @@ var Notification = (_temp = _class = function (_PureComponent) {
             var _props = this.props,
                 show = _props.show,
                 type = _props.type,
+                dismissable = _props.dismissable,
                 onDismiss = _props.onDismiss,
                 className = _props.className,
                 children = _props.children,
-                props = _objectWithoutProperties(_props, ['show', 'type', 'onDismiss', 'className', 'children']);
+                props = _objectWithoutProperties(_props, ['show', 'type', 'dismissable', 'onDismiss', 'className', 'children']);
 
             var icon = _react2.default.createElement('i', {
                 className: (0, _classnames2.default)(_index2.default.icon, (_classNames = {}, _defineProperty(_classNames, _index2.default.iconError, type === 'error'), _defineProperty(_classNames, _index2.default.iconWarning, type === 'warning'), _defineProperty(_classNames, _index2.default.iconInfo, type === 'info'), _defineProperty(_classNames, _index2.default.iconSuccess, type === 'success'), _classNames))
@@ -24153,7 +24154,7 @@ var Notification = (_temp = _class = function (_PureComponent) {
                     className: (0, _classnames2.default)(className, _index2.default.notification, (_classNames2 = {}, _defineProperty(_classNames2, _index2.default.fade, true), _defineProperty(_classNames2, _index2.default.in, show), _defineProperty(_classNames2, _index2.default.dismissed, !show), _defineProperty(_classNames2, _index2.default.error, type === 'error'), _defineProperty(_classNames2, _index2.default.warning, type === 'warning'), _defineProperty(_classNames2, _index2.default.info, type === 'info'), _defineProperty(_classNames2, _index2.default.success, type === 'success'), _classNames2))
                 }),
                 show && icon,
-                show && dismiss,
+                dismissable && show && dismiss,
                 show && children
             );
         }
@@ -24163,10 +24164,12 @@ var Notification = (_temp = _class = function (_PureComponent) {
 }(_react.PureComponent), _class.propTypes = {
     show: _propTypes2.default.bool,
     type: _propTypes2.default.oneOf(['', 'error', 'success', 'warning', 'info']),
+    dismissable: _propTypes2.default.bool,
     onDismiss: _propTypes2.default.func
 }, _class.defaultProps = {
     show: true,
     type: '',
+    dismissable: true,
     onDismiss: function onDismiss(event) {}
 }, _temp);
 exports.default = Notification;
@@ -24192,10 +24195,6 @@ var _class, _temp;
 var _classnames = __webpack_require__("../node_modules/classnames/index.js");
 
 var _classnames2 = _interopRequireDefault(_classnames);
-
-var _propTypes = __webpack_require__("../node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _react = __webpack_require__("../node_modules/react/react.js");
 
@@ -24242,11 +24241,7 @@ var ToastNotification = (_temp = _class = function (_PureComponent) {
     }]);
 
     return ToastNotification;
-}(_react.PureComponent), _class.propTypes = _extends({}, _Notification2.default.propTypes, {
-    dismissTimeout: _propTypes2.default.number
-}), _class.defaultProps = _extends({}, _Notification2.default.defaultProps, {
-    dismissTimeout: 0
-}), _temp);
+}(_react.PureComponent), _class.propTypes = _extends({}, _Notification2.default.propTypes), _class.defaultProps = _extends({}, _Notification2.default.defaultProps), _temp);
 exports.default = ToastNotification;
 
 /***/ }),
@@ -24593,6 +24588,8 @@ if(false) {
 "use strict";
 
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 __webpack_require__("../node_modules/trendmicro-ui/dist/css/trendmicro-ui.css");
@@ -24648,24 +24645,105 @@ var App = function (_React$Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            error: true,
-            warning: true,
-            info: true,
-            success: true
-        }, _this.onDismiss = function (type) {
+            notification: {
+                error: true,
+                warning: true,
+                info: true
+            },
+            toastNotification: {
+                willDismiss: false,
+                dismissTimeout: 5, // 5 seconds
+                error: true,
+                warning: true,
+                info: true,
+                success: true
+            }
+        }, _this.onDismissNotification = function (type) {
             return function (event) {
-                _this.setState(_defineProperty({}, type, false));
+                _this.setState({
+                    notification: _extends({}, _this.state.notification, _defineProperty({}, type, false))
+                });
+            };
+        }, _this.onDismissToastNotification = function (type) {
+            return function (event) {
+                _this.setState({
+                    toastNotification: _extends({}, _this.state.toastNotification, _defineProperty({}, type, false))
+                });
             };
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(App, [{
+        key: 'dismissTimer',
+        value: function dismissTimer() {
+            var _this2 = this;
+
+            setTimeout(function () {
+                var dismissTimeout = _this2.state.toastNotification.dismissTimeout;
+
+
+                if (dismissTimeout <= 1) {
+                    _this2.setState({
+                        toastNotification: _extends({}, _this2.state.toastNotification, {
+                            willDismiss: false,
+                            dismissTimeout: 5,
+                            error: false,
+                            warning: false,
+                            info: false,
+                            success: false
+                        })
+                    });
+                    return;
+                }
+
+                _this2.setState({
+                    toastNotification: _extends({}, _this2.state.toastNotification, {
+                        dismissTimeout: dismissTimeout - 1
+                    })
+                }, function () {
+                    _this2.dismissTimer();
+                });
+            }, 1000);
+
+            this.setState({
+                toastNotification: _extends({}, this.state.toastNotification, {
+                    willDismiss: true
+                })
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             var name = 'React Notifications';
             var url = 'https://github.com/trendmicro-frontend/react-notifications';
+            var dismissTimeout = this.state.toastNotification.dismissTimeout;
+
+            var canDismissNotification = function () {
+                var _state$notification = _this3.state.notification,
+                    error = _state$notification.error,
+                    warning = _state$notification.warning,
+                    info = _state$notification.info;
+
+
+                return error || warning || info;
+            }();
+            var canDismissToastNotification = function () {
+                var _state$toastNotificat = _this3.state.toastNotification,
+                    willDismiss = _state$toastNotificat.willDismiss,
+                    error = _state$toastNotificat.error,
+                    warning = _state$toastNotificat.warning,
+                    info = _state$toastNotificat.info,
+                    success = _state$toastNotificat.success;
+
+
+                if (willDismiss) {
+                    return false;
+                }
+
+                return error || warning || info || success;
+            }();
 
             return _react2.default.createElement(
                 'div',
@@ -24673,49 +24751,7 @@ var App = function (_React$Component) {
                 _react2.default.createElement(_Navbar2.default, { name: name, url: url }),
                 _react2.default.createElement(
                     'div',
-                    { className: 'container-fluid' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'row' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'col-md-12', style: { margin: '16px 0' } },
-                            _react2.default.createElement(
-                                _reactButtons.Button,
-                                {
-                                    btnStyle: 'flat',
-                                    onClick: function onClick() {
-                                        _this2.setState(function (state) {
-                                            return {
-                                                error: true,
-                                                warning: true,
-                                                info: true,
-                                                success: true
-                                            };
-                                        });
-                                    }
-                                },
-                                'Show Notifications'
-                            ),
-                            _react2.default.createElement(
-                                _reactButtons.Button,
-                                {
-                                    btnStyle: 'flat',
-                                    onClick: function onClick() {
-                                        _this2.setState(function (state) {
-                                            return {
-                                                error: false,
-                                                warning: false,
-                                                info: false,
-                                                success: false
-                                            };
-                                        });
-                                    }
-                                },
-                                'Hide Notifications'
-                            )
-                        )
-                    ),
+                    { className: 'container-fluid', style: { marginTop: 15 } },
                     _react2.default.createElement(
                         'div',
                         { className: 'row' },
@@ -24763,13 +24799,53 @@ var App = function (_React$Component) {
                                     ' ',
                                     'To provide users with potentially useful, relevant informational.'
                                 ),
-                                _react2.default.createElement('div', { style: { marginBottom: 15 } }),
+                                _react2.default.createElement(
+                                    'div',
+                                    { style: { margin: '10px 0' } },
+                                    _react2.default.createElement(
+                                        _reactButtons.Button,
+                                        {
+                                            btnStyle: 'flat',
+                                            onClick: function onClick() {
+                                                _this3.setState(function (state) {
+                                                    return {
+                                                        notification: _extends({}, state.notification, {
+                                                            error: true,
+                                                            warning: true,
+                                                            info: true
+                                                        })
+                                                    };
+                                                });
+                                            }
+                                        },
+                                        'Show Notifications'
+                                    ),
+                                    _react2.default.createElement(
+                                        _reactButtons.Button,
+                                        {
+                                            btnStyle: 'flat',
+                                            disabled: !canDismissNotification,
+                                            onClick: function onClick() {
+                                                _this3.setState(function (state) {
+                                                    return {
+                                                        notification: _extends({}, state.notification, {
+                                                            error: false,
+                                                            warning: false,
+                                                            info: false
+                                                        })
+                                                    };
+                                                });
+                                            }
+                                        },
+                                        'Dismiss Notifications'
+                                    )
+                                ),
                                 _react2.default.createElement(
                                     _src.Notification,
                                     {
-                                        show: this.state.error,
+                                        show: this.state.notification.error,
                                         type: 'error',
-                                        onDismiss: this.onDismiss('error')
+                                        onDismiss: this.onDismissNotification('error')
                                     },
                                     _react2.default.createElement(
                                         'div',
@@ -24789,9 +24865,9 @@ var App = function (_React$Component) {
                                 _react2.default.createElement(
                                     _src.Notification,
                                     {
-                                        show: this.state.warning,
+                                        show: this.state.notification.warning,
                                         type: 'warning',
-                                        onDismiss: this.onDismiss('warning')
+                                        onDismiss: this.onDismissNotification('warning')
                                     },
                                     _react2.default.createElement(
                                         'div',
@@ -24820,9 +24896,9 @@ var App = function (_React$Component) {
                                 _react2.default.createElement(
                                     _src.Notification,
                                     {
-                                        show: this.state.info,
+                                        show: this.state.notification.info,
                                         type: 'info',
-                                        onDismiss: this.onDismiss('info')
+                                        onDismiss: this.onDismissNotification('info')
                                     },
                                     _react2.default.createElement(
                                         'span',
@@ -24846,7 +24922,7 @@ var App = function (_React$Component) {
                             { className: 'col-md-12' },
                             _react2.default.createElement(
                                 _Section2.default,
-                                { className: 'row-md-5' },
+                                { className: 'row-md-6' },
                                 _react2.default.createElement(
                                     'h3',
                                     null,
@@ -24896,44 +24972,99 @@ var App = function (_React$Component) {
                                     ' ',
                                     'To indicate incorrect or unsuccessful user actions.'
                                 ),
-                                _react2.default.createElement('div', { style: { marginBottom: 15 } }),
+                                _react2.default.createElement(
+                                    'div',
+                                    { style: { margin: '10px 0' } },
+                                    _react2.default.createElement(
+                                        _reactButtons.Button,
+                                        {
+                                            btnStyle: 'flat',
+                                            onClick: function onClick() {
+                                                _this3.setState(function (state) {
+                                                    return {
+                                                        toastNotification: _extends({}, state.toastNotification, {
+                                                            error: true,
+                                                            warning: true,
+                                                            info: true,
+                                                            success: true
+                                                        })
+                                                    };
+                                                });
+                                            }
+                                        },
+                                        'Show Notifications'
+                                    ),
+                                    _react2.default.createElement(
+                                        _reactButtons.Button,
+                                        {
+                                            btnStyle: 'flat',
+                                            disabled: !canDismissToastNotification,
+                                            onClick: function onClick() {
+                                                _this3.setState(function (state) {
+                                                    return {
+                                                        toastNotification: _extends({}, state.toastNotification, {
+                                                            error: false,
+                                                            warning: false,
+                                                            info: false,
+                                                            success: false
+                                                        })
+                                                    };
+                                                });
+                                            }
+                                        },
+                                        'Dismiss Notifications'
+                                    ),
+                                    _react2.default.createElement(
+                                        _reactButtons.Button,
+                                        {
+                                            btnStyle: 'flat',
+                                            disabled: !canDismissToastNotification,
+                                            onClick: function onClick() {
+                                                _this3.dismissTimer();
+                                            }
+                                        },
+                                        'Dismiss Notifications in ',
+                                        dismissTimeout,
+                                        ' seconds'
+                                    )
+                                ),
                                 _react2.default.createElement(
                                     _src.ToastNotification,
                                     {
-                                        show: this.state.error,
+                                        show: this.state.toastNotification.error,
                                         type: 'error',
-                                        onDismiss: this.onDismiss('error'),
-                                        style: { width: 320 }
+                                        onDismiss: this.onDismissToastNotification('error'),
+                                        style: { width: 320, marginBottom: 10 }
                                     },
                                     'Error'
                                 ),
                                 _react2.default.createElement(
                                     _src.ToastNotification,
                                     {
-                                        show: this.state.warning,
+                                        show: this.state.toastNotification.warning,
                                         type: 'warning',
-                                        onDismiss: this.onDismiss('warning'),
-                                        style: { width: 320 }
+                                        onDismiss: this.onDismissToastNotification('warning'),
+                                        style: { width: 320, marginBottom: 10 }
                                     },
                                     'Warning'
                                 ),
                                 _react2.default.createElement(
                                     _src.ToastNotification,
                                     {
-                                        show: this.state.info,
+                                        show: this.state.toastNotification.info,
                                         type: 'info',
-                                        onDismiss: this.onDismiss('info'),
-                                        style: { width: 320 }
+                                        onDismiss: this.onDismissToastNotification('info'),
+                                        style: { width: 320, marginBottom: 10 }
                                     },
                                     'Info'
                                 ),
                                 _react2.default.createElement(
                                     _src.ToastNotification,
                                     {
-                                        show: this.state.success,
+                                        show: this.state.toastNotification.success,
                                         type: 'success',
-                                        onDismiss: this.onDismiss('success'),
-                                        style: { width: 320 }
+                                        onDismiss: this.onDismissToastNotification('success'),
+                                        style: { width: 320, marginBottom: 10 }
                                     },
                                     'Success'
                                 )
@@ -24953,4 +25084,4 @@ _reactDom2.default.render(_react2.default.createElement(App, null), document.get
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?bb303ba3887004d87e4b
+//# sourceMappingURL=bundle.js.map?b34c4c01084c26e72224
