@@ -6,7 +6,7 @@ import styles from './index.styl';
 
 class Notification extends PureComponent {
     static propTypes = {
-        show: PropTypes.bool,
+        // One of: 'error', 'warning', 'info', 'success'
         type: PropTypes.oneOf([
             '',
             'error',
@@ -14,18 +14,25 @@ class Notification extends PureComponent {
             'warning',
             'info'
         ]),
-        dismissable: PropTypes.bool,
+
+        // Whether or not the component is visible.
+        show: PropTypes.bool,
+
+        // Whether or not the notification is dismissible.
+        dismissible: PropTypes.bool,
+
+        // A callback fired when the dismiss icon (x) is clicked.
         onDismiss: PropTypes.func
     };
     static defaultProps = {
-        show: true,
         type: '',
-        dismissable: true,
+        show: true,
+        dismissible: true,
         onDismiss: (event) => {}
     };
 
     render() {
-        const { show, type, dismissable, onDismiss, className, children, ...props } = this.props;
+        const { type, show, dismissible, onDismiss, className, children, ...props } = this.props;
         const icon = (
             <i
                 className={classNames(
@@ -64,7 +71,7 @@ class Notification extends PureComponent {
                 )}
             >
                 {show && icon}
-                {dismissable && show && dismiss}
+                {dismissible && show && dismiss}
                 {show && children}
             </div>
         );
