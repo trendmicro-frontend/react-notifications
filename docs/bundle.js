@@ -1575,7 +1575,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".notification---2_Af9 {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  position: relative;\n  color: #222;\n  padding: 8px 40px 8px 48px;\n  border-radius: 0;\n}\n.notification---2_Af9 *,\n.notification---2_Af9 *:before,\n.notification---2_Af9 *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n.notification---2_Af9 + .notification---2_Af9 {\n  margin-top: 1px;\n}\n.notification---2_Af9 .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 24px;\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n}\n.notification---2_Af9 .icon---2iauW.icon-success---3YPmN {\n  background-image: url(" + __webpack_require__("../src/check.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-error---3B7m9 {\n  background-image: url(" + __webpack_require__("../src/close-circle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-warning---2XobG {\n  background-image: url(" + __webpack_require__("../src/exclamation-triangle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-info---BIo6m {\n  background-image: url(" + __webpack_require__("../src/info-circle.svg") + ");\n}\n.notification---2_Af9.success---eHf2W.dismissed---3wrTq,\n.notification---2_Af9.error---2ZN1m.dismissed---3wrTq,\n.notification---2_Af9.warning---sKkZA.dismissed---3wrTq,\n.notification---2_Af9.info---2db-A.dismissed---3wrTq {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n.notification---2_Af9.success---eHf2W {\n  background-color: #dbf5e7;\n  border: 1px solid #c4ebd6;\n}\n.notification---2_Af9.error---2ZN1m {\n  background-color: #f8dcdd;\n  border: 1px solid #f3c0c3;\n}\n.notification---2_Af9.warning---sKkZA {\n  background-color: #fdf0c3;\n  border: 1px solid #fcd963;\n}\n.notification---2_Af9.info---2db-A {\n  background-color: #cceaf5;\n  border: 1px solid #99d5eb;\n}\n.notification---2_Af9.fade---Xss4y {\n  opacity: 0;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\";\n  filter: alpha(opacity=0);\n  padding-top: 0;\n  padding-bottom: 0;\n  border-width: 0;\n  -webkit-transition: all 0.15s linear;\n  -moz-transition: all 0.15s linear;\n  -o-transition: all 0.15s linear;\n  -ms-transition: all 0.15s linear;\n  transition: all 0.15s linear;\n}\n.notification---2_Af9.fade---Xss4y.in---3rbq2 {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  padding-top: 8px;\n  padding-bottom: 8px;\n  border-width: 1px;\n}\n.notification---2_Af9 .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 16px;\n  margin: 0;\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  background-image: url(" + __webpack_require__("../src/close.svg") + ");\n}\n.notification---2_Af9 .btn-dismiss---3WCDd:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n.notification---2_Af9.toast-notification---3n6Fc {\n  padding: 8px 36px 8px 40px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 16px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 12px;\n}\n", ""]);
+exports.push([module.i, ".notification---2_Af9 {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  position: relative;\n  color: #222;\n  padding: 8px 40px 8px 48px;\n  border-radius: 0;\n}\n.notification---2_Af9 *,\n.notification---2_Af9 *:before,\n.notification---2_Af9 *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n.notification---2_Af9 + .notification---2_Af9 {\n  margin-top: 1px;\n}\n.notification---2_Af9 .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 24px;\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n}\n.notification---2_Af9 .icon---2iauW.icon-success---3YPmN {\n  background-image: url(" + __webpack_require__("../src/check.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-error---3B7m9 {\n  background-image: url(" + __webpack_require__("../src/close-circle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-warning---2XobG {\n  background-image: url(" + __webpack_require__("../src/exclamation-triangle.svg") + ");\n}\n.notification---2_Af9 .icon---2iauW.icon-info---BIo6m {\n  background-image: url(" + __webpack_require__("../src/info-circle.svg") + ");\n}\n.notification---2_Af9.success---eHf2W.dismissed---3wrTq,\n.notification---2_Af9.error---2ZN1m.dismissed---3wrTq,\n.notification---2_Af9.warning---sKkZA.dismissed---3wrTq,\n.notification---2_Af9.info---2db-A.dismissed---3wrTq {\n  border: 0;\n  margin: 0;\n  padding-top: 0;\n  paddinb-bottom: 0;\n}\n.notification---2_Af9.success---eHf2W {\n  background-color: #dbf5e7;\n  border: 1px solid #c4ebd6;\n}\n.notification---2_Af9.error---2ZN1m {\n  background-color: #f8dcdd;\n  border: 1px solid #f3c0c3;\n}\n.notification---2_Af9.warning---sKkZA {\n  background-color: #fdf0c3;\n  border: 1px solid #fcd963;\n}\n.notification---2_Af9.info---2db-A {\n  background-color: #cceaf5;\n  border: 1px solid #99d5eb;\n}\n.notification---2_Af9.fade---Xss4y {\n  opacity: 0;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\";\n  filter: alpha(opacity=0);\n  padding-top: 0;\n  padding-bottom: 0;\n  border-width: 0;\n  -webkit-transition: all 0.15s linear;\n  -moz-transition: all 0.15s linear;\n  -o-transition: all 0.15s linear;\n  -ms-transition: all 0.15s linear;\n  transition: all 0.15s linear;\n}\n.notification---2_Af9.fade---Xss4y.in---3rbq2 {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  padding-top: 8px;\n  padding-bottom: 8px;\n  border-width: 1px;\n}\n.notification---2_Af9 .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 16px;\n  margin: 0;\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  background-image: url(" + __webpack_require__("../src/close.svg") + ");\n}\n.notification---2_Af9 .btn-dismiss---3WCDd:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n.notification---2_Af9.toast-notification---3n6Fc {\n  padding: 8px 36px 8px 40px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .icon---2iauW {\n  position: absolute;\n  top: 10px;\n  left: 16px;\n}\n.notification---2_Af9.toast-notification---3n6Fc .btn-dismiss---3WCDd {\n  position: absolute;\n  top: 10px;\n  right: 12px;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -24132,13 +24132,13 @@ var Notification = (_temp = _class = function (_PureComponent) {
             var _classNames, _classNames2;
 
             var _props = this.props,
-                show = _props.show,
                 type = _props.type,
-                dismissable = _props.dismissable,
+                show = _props.show,
+                dismissible = _props.dismissible,
                 onDismiss = _props.onDismiss,
                 className = _props.className,
                 children = _props.children,
-                props = _objectWithoutProperties(_props, ['show', 'type', 'dismissable', 'onDismiss', 'className', 'children']);
+                props = _objectWithoutProperties(_props, ['type', 'show', 'dismissible', 'onDismiss', 'className', 'children']);
 
             var icon = _react2.default.createElement('i', {
                 className: (0, _classnames2.default)(_index2.default.icon, (_classNames = {}, _defineProperty(_classNames, _index2.default.iconError, type === 'error'), _defineProperty(_classNames, _index2.default.iconWarning, type === 'warning'), _defineProperty(_classNames, _index2.default.iconInfo, type === 'info'), _defineProperty(_classNames, _index2.default.iconSuccess, type === 'success'), _classNames))
@@ -24154,7 +24154,7 @@ var Notification = (_temp = _class = function (_PureComponent) {
                     className: (0, _classnames2.default)(className, _index2.default.notification, (_classNames2 = {}, _defineProperty(_classNames2, _index2.default.fade, true), _defineProperty(_classNames2, _index2.default.in, show), _defineProperty(_classNames2, _index2.default.dismissed, !show), _defineProperty(_classNames2, _index2.default.error, type === 'error'), _defineProperty(_classNames2, _index2.default.warning, type === 'warning'), _defineProperty(_classNames2, _index2.default.info, type === 'info'), _defineProperty(_classNames2, _index2.default.success, type === 'success'), _classNames2))
                 }),
                 show && icon,
-                dismissable && show && dismiss,
+                dismissible && show && dismiss,
                 show && children
             );
         }
@@ -24162,14 +24162,21 @@ var Notification = (_temp = _class = function (_PureComponent) {
 
     return Notification;
 }(_react.PureComponent), _class.propTypes = {
-    show: _propTypes2.default.bool,
+    // One of: 'error', 'warning', 'info', 'success'
     type: _propTypes2.default.oneOf(['', 'error', 'success', 'warning', 'info']),
-    dismissable: _propTypes2.default.bool,
+
+    // Whether or not the component is visible.
+    show: _propTypes2.default.bool,
+
+    // Whether or not the notification is dismissible.
+    dismissible: _propTypes2.default.bool,
+
+    // A callback fired when the dismiss icon (x) is clicked.
     onDismiss: _propTypes2.default.func
 }, _class.defaultProps = {
-    show: true,
     type: '',
-    dismissable: true,
+    show: true,
+    dismissible: true,
     onDismiss: function onDismiss(event) {}
 }, _temp);
 exports.default = Notification;
@@ -25084,4 +25091,4 @@ _reactDom2.default.render(_react2.default.createElement(App, null), document.get
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?b34c4c01084c26e72224
+//# sourceMappingURL=bundle.js.map?f0aada114bffdbce247f

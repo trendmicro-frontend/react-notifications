@@ -1,6 +1,6 @@
 {
   "name": "@trendmicro/react-notifications",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Trend Micro Components: React Notifications",
   "main": "lib/index.js",
   "files": [

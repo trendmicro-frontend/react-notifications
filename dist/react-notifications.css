@@ -1,4 +1,4 @@
-/*! react-notifications v0.1.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-notifications */
+/*! react-notifications v0.2.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-notifications */
 .notifications---notification---3T-X4 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -44,7 +44,8 @@
 .notifications---notification---3T-X4.notifications---info---25oWq.notifications---dismissed---3dxgE {
   border: 0;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  paddinb-bottom: 0;
 }
 .notifications---notification---3T-X4.notifications---success---1mkcr {
   background-color: #dbf5e7;
