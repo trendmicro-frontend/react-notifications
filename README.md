@@ -27,14 +27,42 @@ Demo: https://trendmicro-frontend.github.io/react-notifications
 
 ### Notification
 
+```js
+const { dismissed } = this.state;
+
+<Notification
+    show={!dismissed}
+    type="error"
+    onDismiss={event => {
+        this.setState({ dismissed: true });
+    }}
+/>
+```
+
 ### Toast Notification
+
+```js
+const { dismissed } = this.state;
+
+<ToastNotification
+    show={!dismissed}
+    type="warning"
+    onDismiss={event => {
+        this.setState({ dismissed: true });
+    }}
+/>
+```
 
 ## API
 
 ### Properties
 
-Name | Type | Default | Description 
-:--- | :--- | :------ | :----------
+Name        | Type     | Default | Description 
+:---------- | :--------| :------ | :----------
+type        | String   | ''      | One of: 'error', 'warning', 'info', 'success'
+show        | Boolean  | true    | Whether or not the component is visible.
+dismissible | Boolean  | true    | Whether or not the notification is dismissible.
+onDismiss   | Function |         | A callback fired when the dismiss icon (x) is clicked.
 
 ## License
 
