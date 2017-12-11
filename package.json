@@ -1,6 +1,6 @@
 {
   "name": "@trendmicro/react-notifications",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "Trend Micro Components: React Notifications",
   "main": "lib/index.js",
   "files": [
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@trendmicro/react-anchor": "^0.5.5",
     "@trendmicro/react-buttons": "~1.1.0",
+    "@trendmicro/react-modal": "^0.9.1",
     "babel-cli": "~6.24.1",
     "babel-core": "~6.25.0",
     "babel-eslint": "~7.2.3",

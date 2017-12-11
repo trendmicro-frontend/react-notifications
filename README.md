@@ -27,6 +27,8 @@ Demo: https://trendmicro-frontend.github.io/react-notifications
 
 ### Notification
 
+#### Controlled Notification
+
 ```js
 const { dismissed } = this.state;
 
@@ -39,7 +41,23 @@ const { dismissed } = this.state;
 />
 ```
 
+#### Uncontrolled Notification
+
+Note: Always pass a new key while re-rendering uncontrolled notifications.
+
+```js
+<Notification
+    key={_.uniqueId()}
+    type="error"
+    onDismiss={event => { // Optional
+        // Generate a new key if the notification is dismissed.
+    }}
+/>
+```
+
 ### Toast Notification
+
+#### Controlled Toast Notification
 
 ```js
 const { dismissed } = this.state;
@@ -47,8 +65,24 @@ const { dismissed } = this.state;
 <ToastNotification
     show={!dismissed}
     type="warning"
+    autoDismiss={5000}
     onDismiss={event => {
         this.setState({ dismissed: true });
+    }}
+/>
+```
+
+#### Uncontrolled Toast Notification
+
+Note: Always pass a new key while re-rendering uncontrolled toast notifications.
+
+```js
+<ToastNotification
+    key={_.uniqueId()}
+    type="warning"
+    autoDismiss={5000}
+    onDismiss={event => { // Optional
+        // Generate a new key if the toast notification is dismissed.
     }}
 />
 ```
@@ -62,6 +96,7 @@ Name        | Type     | Default | Description
 type        | String   | ''      | One of: 'error', 'warning', 'info', 'success'
 show        | Boolean  | true    | Whether or not the component is visible.
 dismissible | Boolean  | true    | Whether or not the notification is dismissible.
+autoDismiss | Number or Boolean  | false | The auto dismiss timeout in milliseconds.
 onDismiss   | Function |         | A callback fired when the dismiss icon (x) is clicked.
 
 ## License

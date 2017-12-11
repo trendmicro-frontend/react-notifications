@@ -1,9 +1,9 @@
-import classNames from 'classnames';
-import React, { PureComponent } from 'react';
+import cx from 'classnames';
+import React, { Component } from 'react';
 import Notification from './Notification';
 import styles from './index.styl';
 
-class ToastNotification extends PureComponent {
+class ToastNotification extends Component {
     static propTypes = {
         ...Notification.propTypes
     };
@@ -17,7 +17,7 @@ class ToastNotification extends PureComponent {
         return (
             <Notification
                 {...props}
-                className={classNames(className, styles.toastNotification)}
+                className={cx(className, styles.toastNotification)}
             />
         );
     }

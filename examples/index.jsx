@@ -1,11 +1,13 @@
 import 'trendmicro-ui/dist/css/trendmicro-ui.css';
 import '@trendmicro/react-buttons/dist/react-buttons.css';
+import '@trendmicro/react-modal/dist/react-modal.css';
+import uniqueId from 'lodash/uniqueId';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Anchor from '@trendmicro/react-anchor';
 import { Button } from '@trendmicro/react-buttons';
+import Modal from '@trendmicro/react-modal';
 import Navbar from './Navbar';
-import Section from './Section';
 import { Notification, ToastNotification } from '../src';
 
 class App extends React.Component {
@@ -16,16 +18,15 @@ class App extends React.Component {
             info: true
         },
         toastNotification: {
-            willDismiss: false,
-            dismissTimeout: 5, // 5 seconds
             error: true,
             warning: true,
             info: true,
-            success: true
+            success: true,
+            modal: true
         }
     };
 
-    onDismissNotification = (type) => (event) => {
+    dismissNotification = (type) => (event) => {
         this.setState({
             notification: {
                 ...this.state.notification,
@@ -33,7 +34,8 @@ class App extends React.Component {
             }
         });
     };
-    onDismissToastNotification = (type) => (event) => {
+
+    dismissToastNotification = (type) => (event) => {
         this.setState({
             toastNotification: {
                 ...this.state.toastNotification,
@@ -42,57 +44,16 @@ class App extends React.Component {
         });
     };
 
-    dismissTimer() {
-        setTimeout(() => {
-            const { dismissTimeout } = this.state.toastNotification;
-
-            if (dismissTimeout <= 1) {
-                this.setState({
-                    toastNotification: {
-                        ...this.state.toastNotification,
-                        willDismiss: false,
-                        dismissTimeout: 5,
-                        error: false,
-                        warning: false,
-                        info: false,
-                        success: false
-                    }
-                });
-                return;
-            }
-
-            this.setState({
-                toastNotification: {
-                    ...this.state.toastNotification,
-                    dismissTimeout: dismissTimeout - 1
-                }
-            }, () => {
-                this.dismissTimer();
-            });
-        }, 1000);
-
-        this.setState({
-            toastNotification: {
-                ...this.state.toastNotification,
-                willDismiss: true
-            }
-        });
-    }
     render() {
         const name = 'React Notifications';
         const url = 'https://github.com/trendmicro-frontend/react-notifications';
-        const { dismissTimeout } = this.state.toastNotification;
         const canDismissNotification = (() => {
             const { error, warning, info } = this.state.notification;
 
             return error || warning || info;
         })();
         const canDismissToastNotification = (() => {
-            const { willDismiss, error, warning, info, success } = this.state.toastNotification;
-
-            if (willDismiss) {
-                return false;
-            }
+            const { error, warning, info, success } = this.state.toastNotification;
 
             return error || warning || info || success;
         })();
@@ -102,12 +63,19 @@ class App extends React.Component {
                 <Navbar name={name} url={url} />
                 <div className="container-fluid" style={{ marginTop: 15 }}>
                     <div className="row">
-                        <div className="col-md-12">
-                            <Section className="row-md-5">
-                                <h3>Notification</h3>
+                        <div className="col-sm-6">
+                            <div
+                                style={{
+                                    border: '1px solid #ccc',
+                                    padding: '0 20px',
+                                    paddingBottom: 20
+                                }}
+                            >
+                                <h2>Notification</h2>
                                 <div><b>Error:</b> {'To notify critical issues that require the user\'s immediate attention and action.'}</div>
                                 <div><b>Warning:</b> {'To notify potential issues, but users may not need to do anything.'}</div>
                                 <div><b>Info:</b> {'To provide users with potentially useful, relevant informational.'}</div>
+                                <br />
                                 <div style={{ margin: '10px 0' }}>
                                     <Button
                                         btnStyle="flat"
@@ -122,8 +90,12 @@ class App extends React.Component {
                                             }));
                                         }}
                                     >
-                                        Show Notifications
+                                        Show All Notifications
                                     </Button>
+                                </div>
+                                <hr />
+                                <h3>Controlled Notification</h3>
+                                <div style={{ margin: '10px 0' }}>
                                     <Button
                                         btnStyle="flat"
                                         disabled={!canDismissNotification}
@@ -142,17 +114,17 @@ class App extends React.Component {
                                     </Button>
                                 </div>
                                 <Notification
-                                    show={this.state.notification.error}
                                     type="error"
-                                    onDismiss={this.onDismissNotification('error')}
+                                    show={this.state.notification.error}
+                                    onDismiss={this.dismissNotification('error')}
                                 >
                                     <div><b>Unable to Deploy Command</b></div>
                                     <div>An internal error has occurred. Try deploying the command later again. If the problem persists, contact your support representative.</div>
                                 </Notification>
                                 <Notification
-                                    show={this.state.notification.warning}
                                     type="warning"
-                                    onDismiss={this.onDismissNotification('warning')}
+                                    show={this.state.notification.warning}
+                                    onDismiss={this.dismissNotification('warning')}
                                 >
                                     <div><b>Your license will expire soon</b></div>
                                     <div>
@@ -163,20 +135,62 @@ class App extends React.Component {
                                     </div>
                                 </Notification>
                                 <Notification
-                                    show={this.state.notification.info}
                                     type="info"
-                                    onDismiss={this.onDismissNotification('info')}
+                                    show={this.state.notification.info}
+                                    onDismiss={this.dismissNotification('info')}
                                 >
                                     <span style={{ marginRight: 8 }}>This is an informational notification.</span>
                                     <Anchor>More Information</Anchor>
                                 </Notification>
-                            </Section>
+                                <hr />
+                                <h3>Uncontrolled Notification</h3>
+                                <p><b>Note:</b> Always pass a new key while re-rendering uncontrolled notifications.</p>
+                                <Notification
+                                    key={uniqueId()}
+                                    type="error"
+                                    onDismiss={() => {
+                                        // TODO
+                                    }}
+                                >
+                                    <div><b>Unable to Deploy Command</b></div>
+                                    <div>An internal error has occurred. Try deploying the command later again. If the problem persists, contact your support representative.</div>
+                                </Notification>
+                                <Notification
+                                    key={uniqueId()}
+                                    type="warning"
+                                    onDismiss={() => {
+                                        // TODO
+                                    }}
+                                >
+                                    <div><b>Your license will expire soon</b></div>
+                                    <div>
+                                        <span style={{ marginRight: 8 }}>
+                                            Your license will expire in 3 days.
+                                        </span>
+                                        <Button btnSize="xs" btnStyle="flat">Renew Now</Button>
+                                    </div>
+                                </Notification>
+                                <Notification
+                                    key={uniqueId()}
+                                    type="info"
+                                    onDismiss={() => {
+                                        // TODO
+                                    }}
+                                >
+                                    <span style={{ marginRight: 8 }}>This is an informational notification.</span>
+                                    <Anchor>More Information</Anchor>
+                                </Notification>
+                            </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <Section className="row-md-6">
-                                <h3>Toast Notification</h3>
+                        <div className="col-sm-6">
+                            <div
+                                style={{
+                                    border: '1px solid #ccc',
+                                    padding: '0 20px',
+                                    paddingBottom: 20
+                                }}
+                            >
+                                <h2>Toast Notification</h2>
                                 <div><b>Error:</b> {'To indicate incorrect or unsuccessful user actions.'}</div>
                                 <div><b>Warning:</b> {'To indicate unusual user actions.'}</div>
                                 <div><b>Info:</b> {'To provide additional information on user-initiated actions.'}</div>
@@ -196,8 +210,12 @@ class App extends React.Component {
                                             }));
                                         }}
                                     >
-                                        Show Notifications
+                                        Show All Toast Notifications
                                     </Button>
+                                </div>
+                                <hr />
+                                <h3>Controlled Toast Notification</h3>
+                                <div style={{ margin: '10px 0' }}>
                                     <Button
                                         btnStyle="flat"
                                         disabled={!canDismissToastNotification}
@@ -213,51 +231,103 @@ class App extends React.Component {
                                             }));
                                         }}
                                     >
-                                        Dismiss Notifications
-                                    </Button>
-                                    <Button
-                                        btnStyle="flat"
-                                        disabled={!canDismissToastNotification}
-                                        onClick={() => {
-                                            this.dismissTimer();
-                                        }}
-                                    >
-                                        Dismiss Notifications in {dismissTimeout} seconds
+                                        Dismiss Toast Notifications
                                     </Button>
                                 </div>
                                 <ToastNotification
-                                    show={this.state.toastNotification.error}
                                     type="error"
-                                    onDismiss={this.onDismissToastNotification('error')}
+                                    show={this.state.toastNotification.error}
+                                    onDismiss={this.dismissToastNotification('error')}
                                     style={{ width: 320, marginBottom: 10 }}
                                 >
                                     Error
                                 </ToastNotification>
                                 <ToastNotification
-                                    show={this.state.toastNotification.warning}
                                     type="warning"
-                                    onDismiss={this.onDismissToastNotification('warning')}
+                                    show={this.state.toastNotification.warning}
+                                    onDismiss={this.dismissToastNotification('warning')}
                                     style={{ width: 320, marginBottom: 10 }}
                                 >
                                     Warning
                                 </ToastNotification>
                                 <ToastNotification
-                                    show={this.state.toastNotification.info}
                                     type="info"
-                                    onDismiss={this.onDismissToastNotification('info')}
+                                    show={this.state.toastNotification.info}
+                                    onDismiss={this.dismissToastNotification('info')}
                                     style={{ width: 320, marginBottom: 10 }}
                                 >
                                     Info
                                 </ToastNotification>
                                 <ToastNotification
-                                    show={this.state.toastNotification.success}
                                     type="success"
-                                    onDismiss={this.onDismissToastNotification('success')}
+                                    show={this.state.toastNotification.success}
+                                    onDismiss={this.dismissToastNotification('success')}
                                     style={{ width: 320, marginBottom: 10 }}
                                 >
                                     Success
                                 </ToastNotification>
-                            </Section>
+                                <hr />
+                                <h3>Uncontrolled Toast Notifications</h3>
+                                <p><b>Note:</b> Always pass a new key while re-rendering uncontrolled toast notifications.</p>
+                                <ToastNotification
+                                    key={uniqueId()}
+                                    type="error"
+                                    onDismiss={() => {
+                                        // TODO
+                                    }}
+                                    style={{ width: 320, marginBottom: 10 }}
+                                >
+                                    Error
+                                </ToastNotification>
+                                <ToastNotification
+                                    key={uniqueId()}
+                                    type="warning"
+                                    style={{ width: 320, marginBottom: 10 }}
+                                >
+                                    Warning
+                                </ToastNotification>
+                                <ToastNotification
+                                    key={uniqueId()}
+                                    type="info"
+                                    style={{ width: 320, marginBottom: 10 }}
+                                >
+                                    Info
+                                </ToastNotification>
+                                <ToastNotification
+                                    key={uniqueId()}
+                                    type="success"
+                                    style={{ width: 320, marginBottom: 10 }}
+                                >
+                                    Success
+                                </ToastNotification>
+                                <hr />
+                                <h4>Modal Notification</h4>
+                                <Modal showOverlay={false}>
+                                    <Modal.Header>
+                                        <ToastNotification
+                                            key={uniqueId()}
+                                            type="success"
+                                            style={{
+                                                position: 'absolute',
+                                                top: 8,
+                                                left: '50%',
+                                                transform: 'translateX(-50%)'
+                                            }}
+                                        >
+                                            2 items added successfully.
+                                        </ToastNotification>
+                                        <Modal.Title>
+                                            Add Exception
+                                        </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <Button btnStyle="primary">Add</Button>
+                                        <Button>Cancel</Button>
+                                    </Modal.Footer>
+                                </Modal>
+                            </div>
                         </div>
                     </div>
                 </div>
