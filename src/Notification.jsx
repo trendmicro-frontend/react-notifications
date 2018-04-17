@@ -83,6 +83,12 @@ class Notification extends Component {
             }
         }
     }
+    componentWillUnmount() {
+        if (this.dismissTimer) {
+            clearTimeout(this.dismissTimer);
+        }
+    }
+
     render() {
         const {
             type,
