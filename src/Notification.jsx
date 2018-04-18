@@ -86,6 +86,7 @@ class Notification extends Component {
     componentWillUnmount() {
         if (this.dismissTimer) {
             clearTimeout(this.dismissTimer);
+            this.dismissTimer = null;
         }
     }
 
