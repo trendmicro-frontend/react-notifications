@@ -6,7 +6,7 @@ import styles from './index.styl';
 
 class Notification extends Component {
     static propTypes = {
-        // One of: 'error', 'warning', 'info', 'success'
+        /** One of: 'error', 'warning', 'info', 'success' */
         type: PropTypes.oneOf([
             '',
             'error',
@@ -15,22 +15,22 @@ class Notification extends Component {
             'info'
         ]),
 
-        // Whether or not the component is visible.
+        /** Whether or not the component is visible. */
         show: PropTypes.bool,
 
-        // It's only used for initial render when the `show` prop is not specified.
+        /** It's only used for initial render when the `show` prop is not specified. */
         defaultShow: PropTypes.bool,
 
-        // Whether or not the notification is dismissible.
+        /** Whether or not the notification is dismissible. */
         dismissible: PropTypes.bool,
 
-        // The auto dismiss timeout.
+        /** The auto dismiss timeout. */
         autoDismiss: PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.bool
         ]),
 
-        // A callback fired when the dismiss icon (x) is clicked.
+        /** A callback fired when the dismiss icon (x) is clicked. */
         onDismiss: PropTypes.func
     };
     static defaultProps = {

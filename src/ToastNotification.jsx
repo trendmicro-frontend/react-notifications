@@ -1,26 +1,21 @@
 import cx from 'classnames';
-import React, { Component } from 'react';
+import React from 'react';
 import Notification from './Notification';
 import styles from './index.styl';
 
-class ToastNotification extends Component {
-    static propTypes = {
-        ...Notification.propTypes
-    };
-    static defaultProps = {
-        ...Notification.defaultProps
-    };
+const ToastNotification = ({ className, ...props }) => (
+    <Notification
+        {...props}
+        className={cx(className, styles.toastNotification)}
+    />
+);
 
-    render() {
-        const { className, ...props } = this.props;
+ToastNotification.propTypes = {
+    ...Notification.propTypes
+};
 
-        return (
-            <Notification
-                {...props}
-                className={cx(className, styles.toastNotification)}
-            />
-        );
-    }
-}
+ToastNotification.defaultProps = {
+    ...Notification.defaultProps
+};
 
 export default ToastNotification;
